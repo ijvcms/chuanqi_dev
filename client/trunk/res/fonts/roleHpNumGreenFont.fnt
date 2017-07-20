@@ -1,0 +1,17 @@
+info face="华康海报体W12(P)" size=32 bold=0 italic=0 charset="" unicode=0 stretchH=100 smooth=1 aa=1 padding=0,0,0,0 spacing=1,1
+common lineHeight=21 base=28 scaleW=187 scaleH=21 pages=1 packed=0
+page id=0 file="roleHpNumGreenFont.png"
+chars count=11
+char id=49   x=0     y=0     width=17     height=21     xoffset=0     yoffset=0    xadvance=17     page=0  chnl=0 
+char id=50   x=17     y=0     width=17     height=21     xoffset=0     yoffset=0    xadvance=17     page=0  chnl=0 
+char id=51   x=34     y=0     width=17     height=21     xoffset=0     yoffset=0    xadvance=17     page=0  chnl=0 
+char id=52   x=51     y=0     width=17     height=21     xoffset=0     yoffset=0    xadvance=17     page=0  chnl=0 
+char id=53   x=68     y=0     width=17     height=21     xoffset=0     yoffset=0    xadvance=17     page=0  chnl=0 
+char id=54   x=85     y=0     width=17     height=21     xoffset=0     yoffset=0    xadvance=17     page=0  chnl=0 
+char id=55   x=102     y=0     width=17     height=21     xoffset=0     yoffset=0    xadvance=17     page=0  chnl=0 
+char id=56   x=119     y=0     width=17     height=21     xoffset=0     yoffset=0    xadvance=17     page=0  chnl=0 
+char id=57   x=136     y=0     width=17     height=21     xoffset=0     yoffset=0    xadvance=17     page=0  chnl=0 
+char id=48   x=153     y=0     width=17     height=21     xoffset=0     yoffset=0    xadvance=17     page=0  chnl=0 
+char id=45   x=170    y=0     width=17     height=21     xoffset=0     yoffset=0    xadvance=17     page=0  chnl=0 
+char id=43   x=170    y=0     width=17     height=21     xoffset=0     yoffset=0    xadvance=17     page=0  chnl=0 
+kernings count=-1

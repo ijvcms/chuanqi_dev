@@ -1,0 +1,6 @@
+
+=ERROR REPORT==== 2017-07-08 22:40:23 ===
+E(<0.230.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-08 22:40:39 ===
+E(<0.233.0>:legion_lib:28) : _Err{badrpc,nodedown}

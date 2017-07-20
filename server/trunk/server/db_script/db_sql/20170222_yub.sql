@@ -1,0 +1,1 @@
+ALTER TABLE `player_charge` ADD COLUMN `is_bad` int DEFAULT 0 COMMENT '是否坏账 1是,0不是' AFTER `state`;

@@ -1,0 +1,18 @@
+
+=ERROR REPORT==== 2017-07-18 15:05:24 ===
+E(<0.230.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-18 15:16:23 ===
+E(<0.234.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-18 16:11:43 ===
+E(<0.248.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-18 21:00:02 ===
+E(<0.116.0>:scene_hjzc_lib:117) : ok
+
+=ERROR REPORT==== 2017-07-18 23:19:10 ===
+E(<0.788.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-18 23:20:06 ===
+E(<0.788.0>:guild_pp:30) : <<230,136,145,230,152,175,229,130,179,229,165,135>>

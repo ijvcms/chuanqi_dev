@@ -1,0 +1,132 @@
+
+=ERROR REPORT==== 2017-07-15 15:05:31 ===
+E(<0.230.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 15:05:55 ===
+E(<0.232.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 15:15:19 ===
+E(<0.236.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 15:22:05 ===
+E(<0.240.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 15:51:00 ===
+E(<0.249.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 15:57:13 ===
+E(<0.253.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 15:58:36 ===
+E(<0.256.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 15:59:15 ===
+E(<0.260.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 15:59:17 ===
+E(<0.261.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 15:59:46 ===
+E(<0.263.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 16:00:13 ===
+E(<0.256.0>:guild_pp:30) : <<229,141,161,229,143,175>>
+
+=ERROR REPORT==== 2017-07-15 16:00:45 ===
+E(<0.266.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=WARNING REPORT==== 2017-07-15 16:01:36 ===
+W(<0.261.0>:scene_obj_lib:226) : transfer [9,0,0,<0.132.0>,"zsq"]
+
+=WARNING REPORT==== 2017-07-15 16:01:36 ===
+W(<0.132.0>:scene_obj_lib:268) : do_transfer [0,7,31,7,31,"zsq"]
+
+=ERROR REPORT==== 2017-07-15 16:05:56 ===
+E(<0.272.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 16:06:21 ===
+E(<0.275.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 16:08:25 ===
+E(<0.277.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 16:08:37 ===
+E(<0.280.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 16:11:34 ===
+E(<0.284.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 16:15:44 ===
+E(<0.287.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 16:18:53 ===
+E(<0.290.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 16:25:27 ===
+E(<0.295.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 16:27:03 ===
+E(<0.298.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 16:28:24 ===
+E(<0.301.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 16:29:17 ===
+E(<0.304.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 16:29:57 ===
+E(<0.306.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 16:31:03 ===
+E(<0.309.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 16:31:34 ===
+E(<0.312.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 16:32:19 ===
+E(<0.314.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 16:33:46 ===
+E(<0.316.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 16:34:12 ===
+E(<0.319.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 17:07:46 ===
+E(<0.329.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 17:07:59 ===
+E(<0.332.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 17:08:10 ===
+E(<0.334.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 17:17:44 ===
+E(<0.339.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 17:19:27 ===
+E(<0.343.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 17:19:30 ===
+E(<0.347.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-15 17:42:23 ===
+E(<0.368.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=WARNING REPORT==== 2017-07-15 17:43:05 ===
+W(<0.368.0>:scene_obj_lib:226) : transfer [13,0,0,<0.147.0>,"zsq"]
+
+=WARNING REPORT==== 2017-07-15 17:43:05 ===
+W(<0.147.0>:scene_obj_lib:268) : do_transfer [0,26,46,26,46,"zsq"]
+
+=ERROR REPORT==== 2017-07-15 17:48:05 ===
+E(<0.378.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=WARNING REPORT==== 2017-07-15 21:30:00 ===
+W(<0.146.0>:scene_activity_palace_lib:455) : update_box
+
+=WARNING REPORT==== 2017-07-15 21:30:00 ===
+W(<0.146.0>:scene_activity_palace_lib:477) : update_box2 1
+
+=ERROR REPORT==== 2017-07-15 21:57:13 ===
+E(<0.681.0>:legion_lib:28) : _Err{badrpc,nodedown}

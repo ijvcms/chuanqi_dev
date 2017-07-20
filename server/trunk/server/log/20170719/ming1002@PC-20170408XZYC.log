@@ -1,0 +1,56 @@
+
+=ERROR REPORT==== 2017-07-19 21:00:01 ===
+E(<0.116.0>:scene_hjzc_lib:117) : ok
+
+=ERROR REPORT==== 2017-07-19 22:00:00 ===
+E(<0.92.0>:db_cache_lib:76) : error:badarg
+[{erlang,list_to_tuple,
+     [[db_player_base|
+       {'EXIT',
+           {{db_error,
+                [<<"select player_id,name,lv,exp,sex,career,register_time,last_login_time,last_logout_time,os_type,scene_id,x,y,pass_hook_scene_id,hook_scene_id,last_hook_time,draw_hook_time,challenge_num,buy_challenge_num,reset_challenge_time,power,power_recover_time,buy_power_num,reset_buy_power_time,bag,forge,guild_id,legion_id,set_pk_mode,pk_mode,pk_value,vip,blood_bag,ref_task_time,task_reward_active,hp_set,hpmp_set,fight,instance_reset_time,guise,fh_cd,ring_transfer_cd,skill_set,equip_sell_set,pickup_set,vip_exp,pet_att_type,limit_chat,limit_login,wing_state,weapon_state,guild_task_time,guild_task_id,lottery_num,lottery_coin_num,is_robot,instance_left_time,state,lottery_num_1,lottery_score_get_1,lottery_score_use_1 from `player_base` where `player_id` = 4303557230657  limit 1">>,
+                 <<"#42S22Unknown column 'ring_transfer_cd' in 'field list'">>]},
+            [{db_mysqlutil,mysql_halt,1,
+                 [{file,"src/system/db/db_mysqlutil.erl"},{line,200}]},
+             {player_base_db,select_row,1,
+                 [{file,"src/business/player/player_base_db.erl"},{line,29}]},
+             {db_cache_lib,select_row,2,
+                 [{file,"src/business/cache/db_cache_lib.erl"},{line,61}]},
+             {mail_lib,log_mail,2,
+                 [{file,"src/business/mail/mail_lib.erl"},{line,479}]},
+             {arena_mod,'-send_arena_reward_mail/0-lc$^0/1-0-',2,
+                 [{file,"src/business/arena/arena_mod.erl"},{line,314}]},
+             {arena_mod,do_info,1,
+                 [{file,"src/business/arena/arena_mod.erl"},{line,255}]},
+             {arena_mod,handle_info,2,
+                 [{file,"src/business/arena/arena_mod.erl"},{line,124}]},
+             {gen_server,handle_msg,5,
+                 [{file,"gen_server.erl"},{line,599}]}]}}]],
+     []},
+ {player_base_db,select_row,1,
+     [{file,"src/business/player/player_base_db.erl"},{line,33}]},
+ {db_cache_lib,select_row,2,
+     [{file,"src/business/cache/db_cache_lib.erl"},{line,61}]},
+ {mail_lib,log_mail,2,[{file,"src/business/mail/mail_lib.erl"},{line,479}]},
+ {arena_mod,'-send_arena_reward_mail/0-lc$^0/1-0-',2,
+     [{file,"src/business/arena/arena_mod.erl"},{line,314}]},
+ {arena_mod,do_info,1,[{file,"src/business/arena/arena_mod.erl"},{line,255}]},
+ {arena_mod,handle_info,2,
+     [{file,"src/business/arena/arena_mod.erl"},{line,124}]},
+ {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]}]
+
+=ERROR REPORT==== 2017-07-19 22:00:00 ===** Generic server arena_mod terminating 
+** Last message in was {'GIVE_REWARD_MAIL'}
+** When Server state == {state,67}
+** Reason for termination == 
+** {{badmatch,null},
+    [{mail_lib,log_mail,2,
+               [{file,"src/business/mail/mail_lib.erl"},{line,479}]},
+     {arena_mod,'-send_arena_reward_mail/0-lc$^0/1-0-',2,
+                [{file,"src/business/arena/arena_mod.erl"},{line,314}]},
+     {arena_mod,do_info,1,
+                [{file,"src/business/arena/arena_mod.erl"},{line,255}]},
+     {arena_mod,handle_info,2,
+                [{file,"src/business/arena/arena_mod.erl"},{line,124}]},
+     {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},
+     {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}

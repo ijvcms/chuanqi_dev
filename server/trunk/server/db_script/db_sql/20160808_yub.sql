@@ -1,0 +1,1 @@
+ALTER TABLE `player_base` ADD COLUMN `state` TINYINT(4) UNSIGNED NOT NULL DEFAULT 0 COMMENT '玩家状态 0是无状态，1是死亡状态';

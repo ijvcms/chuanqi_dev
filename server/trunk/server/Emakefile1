@@ -1,0 +1,29 @@
+{
+	[
+		'src/business/scene/activity/*',
+		'src/business/scene/activity/scene_activity_base_lib',
+		'src/config/counter_config',
+		'src/api/util/util_date',
+		'src/config/scene_activity_config',
+		'src/business/scene/scene_pp',
+		'src/business/player/player_lib',
+		'src/system/net/net_send',
+		'src/business/scene/scene_obj_lib',
+		'src/business/scene/scene_base_lib',
+		'src/business/scene/area_lib',
+		'src/business/active/active_service_lib',
+		'src/business/hook/hook_pp',
+		'src/business/hook/hook_lib',
+		'src/business/chat/chat_pp',
+		'src/business/counter/counter_lib',
+		'src/business/scene/scene_send_lib',
+		'src/business/scene/scene_skill_lib',
+		'src/business/active/active_pp'
+	]
+	,[
+		debug_info
+		,{i, "include"}
+		,{outdir, "ebin"}
+	]
+}.
+

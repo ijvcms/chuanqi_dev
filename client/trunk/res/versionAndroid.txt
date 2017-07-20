@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"/>
+
+<plist version="1.0">
+    <dict>
+        <key>webUrl</key>
+        <string>http://www.xiaoniaowan.com/cq_update/</string>
+        <key>webIpUrl</key>
+        <string>http://www.xiaoniaowan.com/cq_update/</string>
+        <key>gameVersion</key>
+        <string>1.0.0</string>
+        <key>appVersion</key>
+        <string>1.0.0</string>
+        <key>isNewPack</key>
+        <real>0.0000000000000000</real>
+    </dict>
+</plist>

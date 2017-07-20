@@ -1,0 +1,1 @@
+DELETE FROM player_counter where counter_id in (10024,10025,10026,10027,10028,10029,10030,10022);

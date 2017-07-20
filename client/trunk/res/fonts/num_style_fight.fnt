@@ -1,0 +1,19 @@
+info face="Arial" size=32 bold=0 italic=0 charset="" unicode=1 stretchH=60 smooth=1 aa=1 padding=0,0,0,0 spacing=1,1 outline=0
+common lineHeight=60 base=26 scaleW=654 scaleH=60 pages=1 packed=0 alphaChnl=1 redChnl=0 greenChnl=0 blueChnl=0
+page id=0 file="num_style_fight.png"
+chars count=15
+char id=45   x=0     y=0     width=25    height=60    xoffset=0     yoffset=0     xadvance=25    page=0  chnl=15
+char id=48   x=44     y=0     width=25    height=60    xoffset=0     yoffset=0     xadvance=25    page=0  chnl=15
+char id=49   x=83    y=0     width=19    height=60    xoffset=0     yoffset=0     xadvance=19    page=0  chnl=15
+char id=50   x=115    y=0     width=26    height=60    xoffset=0     yoffset=0     xadvance=26    page=0  chnl=15
+char id=51   x=152    y=0     width=23    height=60    xoffset=0     yoffset=0     xadvance=23    page=0  chnl=15
+char id=52   x=187   y=0     width=24    height=60    xoffset=0     yoffset=0     xadvance=24    page=0  chnl=15
+char id=53   x=222   y=0     width=26    height=60    xoffset=0     yoffset=0     xadvance=26    page=0  chnl=15
+char id=54   x=258   y=0     width=26    height=60    xoffset=0     yoffset=0     xadvance=26    page=0  chnl=15
+char id=55   x=295   y=0     width=24    height=60    xoffset=0     yoffset=0     xadvance=24    page=0  chnl=15
+char id=56   x=330   y=0     width=28    height=60    xoffset=0     yoffset=0     xadvance=28    page=0  chnl=15
+char id=57   x=365   y=0     width=25    height=60    xoffset=0     yoffset=0     xadvance=25    page=0  chnl=15
+char id=98   x=404   y=0     width=63    height=60    xoffset=0     yoffset=0     xadvance=63    page=0  chnl=15
+char id=106   x=467   y=0     width=63    height=60    xoffset=0     yoffset=0     xadvance=63    page=0  chnl=15
+char id=115   x=537   y=0     width=55    height=60    xoffset=0     yoffset=0     xadvance=55    page=0  chnl=15
+char id=112   x=592   y=0     width=60    height=60    xoffset=0     yoffset=0     xadvance=60    page=0  chnl=15

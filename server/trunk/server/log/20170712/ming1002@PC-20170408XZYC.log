@@ -1,0 +1,18 @@
+
+=ERROR REPORT==== 2017-07-12 15:22:29 ===
+E(<0.230.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-12 15:22:49 ===
+E(<0.232.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=WARNING REPORT==== 2017-07-12 15:24:22 ===
+W(<0.232.0>:scene_obj_lib:226) : transfer [9,0,0,<0.132.0>,"zsq"]
+
+=WARNING REPORT==== 2017-07-12 15:24:22 ===
+W(<0.132.0>:scene_obj_lib:268) : do_transfer [0,7,31,7,31,"zsq"]
+
+=ERROR REPORT==== 2017-07-12 15:45:30 ===
+E(<0.238.0>:legion_lib:28) : _Err{badrpc,nodedown}
+
+=ERROR REPORT==== 2017-07-12 21:00:00 ===
+E(<0.116.0>:scene_hjzc_lib:117) : ok
