@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="ERLANG_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="erlang" name="Erlang">
+      <configuration />
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/include" type="erlang-include" />
+      <sourceFolder url="file://$MODULE_DIR$/src/api" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/api/misc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/api/util" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/account" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/active" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/active_merge" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/arena" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/back" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/batch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/buff" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/button_tips" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/cache" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/careertitle" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/charge" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/chat" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/city" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/combat" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/counter" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/cross" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/drop" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/email" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/exam" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/function" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/game_obj" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/goods" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/guide" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/guild" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/hook" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/log" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/lottery" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/mail" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/merge" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/misc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/notice" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/operate_active" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/pet" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/player" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/player_monster" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/player_package" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/push" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/rank" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/red" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/relationship" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/sale" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/scene" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/scene/activity" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/scene/instance" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/scene/special" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/sensitive_word" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/set" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/shop" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/sign" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/skill" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/stat" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/task" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/team" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/transaction" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/business/vip" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/config" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/map_data" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/node" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/proto" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/service" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/system" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/system/db" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/system/db/mysql" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/system/dp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/system/email" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/system/ets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/system/logger" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/system/misc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/system/misc/rfc4627" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/system/net" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/system/pt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/system/rand" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/system/tcp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/system/timer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/system/uid" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tool" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tool/misc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tool/restore" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/ebin" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

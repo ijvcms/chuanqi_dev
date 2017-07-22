@@ -275,15 +275,18 @@ function LoginScene:showLoginView(loginBtnVisible)
     self:closeAllPanel()
     local channelId = ChannelAPI:getChannelId()
     if self.loginView == nil then
+        self:showLabTips("self.loginView == nil")
         if  channelId == "D6A6806578B689C4" or channelId == "D74620B09C2CD765" then -- 腾讯
             self:initQQLoginView()
-        elseif channelId == "1888" or (string.sub(channelId, 1, 1) == "3" and string.sub(channelId, 1, 2) ~= "36" and channelId ~= "3008" and channelId ~= "3009" and channelId ~= "3010" and channelId ~= "3011" and channelId ~= "3012" ) then --自营IOS
+        elseif channelId == "1888" or (string.sub(channelId, 1, 1) == "9" and string.sub(channelId, 1, 2) ~= "36" ) then --自营IOS
             self:initIOSLoginView()
             local loginType = self:getLoginType()
             if "" ~= loginType then --有登陆过自动登陆
                 ChannelAPI:loginEx(loginType)
             end
         else
+            self:showLabTips("new loginView")
+
             self.loginView = display.newNode()
             self.mainLay:addChild(self.loginView)
             self.loginView:setPosition(0, 0)
@@ -307,11 +310,10 @@ function LoginScene:showLoginView(loginBtnVisible)
     end
     if self.loginBtn ~= nil then
         self.loginView:setVisible(loginBtnVisible)
+        self:showLabTips("loginBtnVisible = "..tostring(loginBtnVisible))
         if not loginBtnVisible then
-            if  channelId ~= "{D6A68065-78B689C4}"  and channelId ~= "{D74620B0-9C2CD765}" and channelId ~= "1888" and (string.sub(channelId, 1, 1) ~= "3" or string.sub(channelId, 1, 2) == "36" or channelId == "3008" or channelId == "3009" or channelId == "3010" or channelId == "3011" or channelId == "3012" ) then
-                self:showLabTips("ChannelAPI:login")
-                ChannelAPI:login()
-            end
+            self:showLabTips("ChannelAPI:login")
+            ChannelAPI:login()
         end
     end
 end

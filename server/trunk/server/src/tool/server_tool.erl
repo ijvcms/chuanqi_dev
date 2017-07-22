@@ -70,7 +70,7 @@ get_scene_player_num() ->
 %% 反编译
 abstract(Mod) ->
 	{ok, {_, [{abstract_code, {_, Ac}}]}} = beam_lib:chunks(code:which(Mod), [abstract_code]),
-	io:fwrite("~s~n", [erl_prettypr:format(erl_syntax:form_list(Ac))]).
+	io:fwrite("~ts~n", [erl_prettypr:format(erl_syntax:form_list(Ac))]).
 
 %% ====================================================================
 %% Internal functions

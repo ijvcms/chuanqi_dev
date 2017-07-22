@@ -142,7 +142,7 @@ use_code(PlayerState, Code) ->
 		TestData2 = lists:concat([TestData, "&sign=", my_md5:md5(TestData1)]),
 		%%{ok, {_,_,Body}}
 		%% http请求 获取内容
-		{ok, {_, _, Body}} = httpc:request(post, {"http://123.56.196.102/chuanqi/index.php/Home/Index/usecode",
+		{ok, {_, _, Body}} = httpc:request(post, {"http://123.206.225.144/chuanqi_mg/index.php/Home/Index/usecode",
 			[], "application/x-www-form-urlencoded", TestData2}, [], []),
 
 		?INFO("dd 22 ~ts", [Body]),

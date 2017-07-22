@@ -197,7 +197,7 @@ get_all(Server, Sql, Args) ->
 
 %% @doc 显示人可以看得懂的错误信息
 mysql_halt([Sql, Reason]) ->
-	catch erlang:error({db_error, [Sql, Reason]}).
+	catch erlang:error({db_error, [util_data:to_list(Sql), util_data:to_list(Reason)]}).
 
 %%组合mysql insert语句
 %% 使用方式db_mysqlutil:make_insert_sql(test,["row","r"],["测试",123]) 相当 insert into `test` (row,r) values('测试','123')

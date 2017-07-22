@@ -146,7 +146,7 @@ do_add_server_user(_, OpenId, Name, PlayerId, RegisterTime, Vip) ->
 		]),
 		%%{ok, {_,_,Body}}
 		%% http请求 获取内容
-		{ok, {_, _, Body}} = httpc:request(post, {"http://123.56.196.102/chuanqi/index.php/Home/Index/add_server_user",
+		{ok, {_, _, Body}} = httpc:request(post, {"http://123.206.225.144/chuanqi_mg/index.php/Home/Index/add_server_user",
 			[], "application/x-www-form-urlencoded", TestData}, [], []),
 		case Body of
 			"0" ->
@@ -181,7 +181,7 @@ do_add_user_plug(_, OpenId, Name, PlayerId, Vip, SkillNum) ->
 		]),
 		%%{ok, {_,_,Body}}
 		%% http请求 获取内容
-		{ok, {_, _, Body}} = httpc:request(post, {"http://123.56.196.102/chuanqi/index.php/Home/Index/add_user_plug",
+		{ok, {_, _, Body}} = httpc:request(post, {"http://123.206.225.144/chuanqi_mg/index.php/Home/Index/add_user_plug",
 			[], "application/x-www-form-urlencoded", TestData}, [], []),
 		case Body of
 			"0" ->
@@ -210,7 +210,7 @@ checklogin(OpenId, Socket) ->
 					"&open_id=", bitstring_to_list(OpenId),
 					"&service_id=", config:get_server_no()
 				]),
-				{ok, {_, _, Body}} = httpc:request(post, {"http://123.56.196.102/chuanqi/index.php/Home/Index/checklogin",
+				{ok, {_, _, Body}} = httpc:request(post, {"http://123.206.225.144/chuanqi_mg/index.php/Home/Index/checklogin",
 					[], "application/x-www-form-urlencoded", TestData}, [], []),
 				case Body of
 					"true" ->

@@ -22,84 +22,87 @@ test_charge() ->
 
 %% 订单开始或订单结束
 charge(PlayerId, Money, Virtual, Platform, Server, ChargeId, IsIOS, IsComplete) ->
-	if
-		Server > 20000 ->
-			case IsComplete of
-				true ->
-					spawn(fun() ->
-						EncData = make_reyun_data(PlayerId, Money, Virtual, Platform, Server, ChargeId),
-						post_reyun(rfc4627:encode(EncData))
-					end);
-				false ->
-					skip
-			end;
-		Server > 13000 ->%%6kw
-			spawn(fun() ->
-				EncData = make_charge_data(PlayerId, Money, Virtual, Platform, Server, ChargeId, IsIOS, IsComplete),
-				post_talkingdata("5D504D95810142CEA3190CD0F63261CA", rfc4627:encode(EncData))
-			end);
-		Server > 12000 ->%%玩趣（游魂)：赤月无双
-			spawn(fun() ->
-				EncData = make_charge_data(PlayerId, Money, Virtual, Platform, Server, ChargeId, IsIOS, IsComplete),
-				post_talkingdata("310E2968B77F4F18B22D4B102AFA9766", rfc4627:encode(EncData))
-			end);
-		Server > 9000 ->%%云天空
-			spawn(fun() ->
-				EncData = make_charge_data(PlayerId, Money, Virtual, Platform, Server, ChargeId, IsIOS, IsComplete),
-				post_talkingdata("0D3AC93FAACEBDB885DA0362A9580C2D", rfc4627:encode(EncData))
-			end);
-		Server > 5000 ->%%平平科技
-			spawn(fun() ->
-				EncData = make_charge_data(PlayerId, Money, Virtual, Platform, Server, ChargeId, IsIOS, IsComplete),
-				post_talkingdata("F23DE28AA1A04897BDF07D500606BF03", rfc4627:encode(EncData))
-			end);
-		Server > 4000 ->%%聚丰
-			spawn(fun() ->
-				EncData = make_charge_data(PlayerId, Money, Virtual, Platform, Server, ChargeId, IsIOS, IsComplete),
-				post_talkingdata("C45CCE588ECC4348A061036B146B8399", rfc4627:encode(EncData))
-			end);
-		Server > 1000 ->
-			spawn(fun() ->
-				TalinkAppId =
-					if
-						%%游戏Fan
-						Platform =:= 2039 -> "D929CF90E98D43A5AB8FBD7B1DB59F6F";
-						%%亿客游
-						Platform =:= 2056 -> "097639BA5C3B46889DE33F23CF5AF90B";
-						%%奇点网络
-						Platform =:= 2057 -> "78130FD26DC5401C9EC75D09A738C86A";
-						%%龙岩公会,改渠道码方式(2888(cps1636)-2700)
-						Platform =:= 2700 -> "AC500264464C4AA49AFFDD464C78C671";
-						%%上海清源
-						Platform >= 3008 andalso Platform =< 3012 -> "BC788C5ED87A4970A69BEE3AA9C2E438";
-						%%武汉辉腾
-						Platform =:= 3013 -> "702D3AEDC0DA4FAFAEBE89CA856FD034";
-						%%聚梦龙图
-						Platform >= 3014 andalso Platform =< 3015 -> "09A0A542A3014A3A8DC687BB691D3EB2";
-						Platform =:= 3021 -> "09A0A542A3014A3A8DC687BB691D3EB2";
-						%%上海臻叙
-						Platform >= 3016 andalso Platform =< 3018 -> "4FC001F0849E42E2802B03BCC116DF81";
-						%%墨菲
-						Platform =:= 3019 -> "74F72D8406BD4CE0B0CF8D6914589F40";
-						%%Sogagame
-						Platform =:= 3020 -> "9B469A17B82B4AB0A43EFC74704148BC";
-						%%搜伯
-						Platform >= 3022 andalso Platform =< 3023 -> "3914AE6D8DB245AEA30F9AA321A4979B";
-						%%依然网络
-						Platform =:= 3024 -> "B79135396D4D4B558451ED247C019091";
-						%%瑞诺网络:铁血传奇
-						Platform =:= 3601 -> "9D1121673ADF4FD4944152C1AC201696";
-						%%武汉点智（皇途霸主）
-						Platform =:= 3603 -> "668D3C820873430E9AD0C760793B7B90";
-						%%铁血沙城
-						true -> "0D3AC93FAACEBDB885DA0362A9580C2D"
-					end,
-				EncData = make_charge_data(PlayerId, Money, Virtual, Platform, Server, ChargeId, IsIOS, IsComplete),
-				post_talkingdata(TalinkAppId, rfc4627:encode(EncData))
-			end);
-		true ->
-			skip
-	end.
+	EncData = make_charge_data(PlayerId, Money, Virtual, Platform, Server, ChargeId, IsIOS, IsComplete),
+	post_talkingdata("E402F28B7FDD4DDA9913CD36502EBCA1", rfc4627:encode(EncData)).
+%%
+%%	if
+%%		Server > 20000 ->
+%%			case IsComplete of
+%%				true ->
+%%					spawn(fun() ->
+%%						EncData = make_reyun_data(PlayerId, Money, Virtual, Platform, Server, ChargeId),
+%%						post_reyun(rfc4627:encode(EncData))
+%%					end);
+%%				false ->
+%%					skip
+%%			end;
+%%		Server > 13000 ->%%6kw
+%%			spawn(fun() ->
+%%				EncData = make_charge_data(PlayerId, Money, Virtual, Platform, Server, ChargeId, IsIOS, IsComplete),
+%%				post_talkingdata("5D504D95810142CEA3190CD0F63261CA", rfc4627:encode(EncData))
+%%			end);
+%%		Server > 12000 ->%%玩趣（游魂)：赤月无双
+%%			spawn(fun() ->
+%%				EncData = make_charge_data(PlayerId, Money, Virtual, Platform, Server, ChargeId, IsIOS, IsComplete),
+%%				post_talkingdata("310E2968B77F4F18B22D4B102AFA9766", rfc4627:encode(EncData))
+%%			end);
+%%		Server > 9000 ->%%云天空
+%%			spawn(fun() ->
+%%				EncData = make_charge_data(PlayerId, Money, Virtual, Platform, Server, ChargeId, IsIOS, IsComplete),
+%%				post_talkingdata("0D3AC93FAACEBDB885DA0362A9580C2D", rfc4627:encode(EncData))
+%%			end);
+%%		Server > 5000 ->%%平平科技
+%%			spawn(fun() ->
+%%				EncData = make_charge_data(PlayerId, Money, Virtual, Platform, Server, ChargeId, IsIOS, IsComplete),
+%%				post_talkingdata("F23DE28AA1A04897BDF07D500606BF03", rfc4627:encode(EncData))
+%%			end);
+%%		Server > 4000 ->%%聚丰
+%%			spawn(fun() ->
+%%				EncData = make_charge_data(PlayerId, Money, Virtual, Platform, Server, ChargeId, IsIOS, IsComplete),
+%%				post_talkingdata("C45CCE588ECC4348A061036B146B8399", rfc4627:encode(EncData))
+%%			end);
+%%		Server > 1000 ->
+%%			spawn(fun() ->
+%%				TalinkAppId =
+%%					if
+%%						%%游戏Fan
+%%						Platform =:= 2039 -> "D929CF90E98D43A5AB8FBD7B1DB59F6F";
+%%						%%亿客游
+%%						Platform =:= 2056 -> "097639BA5C3B46889DE33F23CF5AF90B";
+%%						%%奇点网络
+%%						Platform =:= 2057 -> "78130FD26DC5401C9EC75D09A738C86A";
+%%						%%龙岩公会,改渠道码方式(2888(cps1636)-2700)
+%%						Platform =:= 2700 -> "AC500264464C4AA49AFFDD464C78C671";
+%%						%%上海清源
+%%						Platform >= 3008 andalso Platform =< 3012 -> "BC788C5ED87A4970A69BEE3AA9C2E438";
+%%						%%武汉辉腾
+%%						Platform =:= 3013 -> "702D3AEDC0DA4FAFAEBE89CA856FD034";
+%%						%%聚梦龙图
+%%						Platform >= 3014 andalso Platform =< 3015 -> "09A0A542A3014A3A8DC687BB691D3EB2";
+%%						Platform =:= 3021 -> "09A0A542A3014A3A8DC687BB691D3EB2";
+%%						%%上海臻叙
+%%						Platform >= 3016 andalso Platform =< 3018 -> "4FC001F0849E42E2802B03BCC116DF81";
+%%						%%墨菲
+%%						Platform =:= 3019 -> "74F72D8406BD4CE0B0CF8D6914589F40";
+%%						%%Sogagame
+%%						Platform =:= 3020 -> "9B469A17B82B4AB0A43EFC74704148BC";
+%%						%%搜伯
+%%						Platform >= 3022 andalso Platform =< 3023 -> "3914AE6D8DB245AEA30F9AA321A4979B";
+%%						%%依然网络
+%%						Platform =:= 3024 -> "B79135396D4D4B558451ED247C019091";
+%%						%%瑞诺网络:铁血传奇
+%%						Platform =:= 3601 -> "9D1121673ADF4FD4944152C1AC201696";
+%%						%%武汉点智（皇途霸主）
+%%						Platform =:= 3603 -> "668D3C820873430E9AD0C760793B7B90";
+%%						%%铁血沙城
+%%						true -> "0D3AC93FAACEBDB885DA0362A9580C2D"
+%%					end,
+%%				EncData = make_charge_data(PlayerId, Money, Virtual, Platform, Server, ChargeId, IsIOS, IsComplete),
+%%				post_talkingdata(TalinkAppId, rfc4627:encode(EncData))
+%%			end);
+%%		true ->
+%%			skip
+%%	end.
 
 %% 传输数据
 post_talkingdata(TalinkAppId, JsonData) ->

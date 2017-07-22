@@ -72,7 +72,7 @@ get_tcp_listener_html() ->
 	%% 添加key属性信息
 	%%{ok, {_,_,Body}}
 	%% http请求 获取内容
-	{ok, {_, _, Body}} = httpc:request(post, {"http://123.56.196.102/chuanqi/index.php/Home/Index/get_server_info_v2_2",
+	{ok, {_, _, Body}} = httpc:request(post, {"http://123.206.225.144/chuanqi_mg/index.php/Home/Index/get_server_info_v2_2",
 		[], "application/x-www-form-urlencoded", TestData}, [], []),
 
 	?ERR("~n data~p  http: ~p~n", [TestData, Body]),
@@ -103,7 +103,7 @@ get_cross_server_list_html() ->
 		"service_id=", config:get_server_no()
 	]),
 	%% http请求 获取内容
-	{ok, {_, _, Body}} = httpc:request(post, {"http://123.56.196.102/chuanqi/index.php/Home/Index/get_server_info_list",
+	{ok, {_, _, Body}} = httpc:request(post, {"http://123.206.225.144/chuanqi_mg/index.php/Home/Index/get_server_info_list",
 		%% {ok, {_, _, Body}} = httpc:request(post, {"http://www/chuanqi_mg/index.php/Home/Index/get_operate_active_conf",
 		[], "application/x-www-form-urlencoded", TestData}, [], []),
 
@@ -118,7 +118,7 @@ get_operate_active_conf_html() ->
 		"service_id=", config:get_server_no()
 	]),
 	%% http请求 获取内容
-	{ok, {_, _, Body}} = httpc:request(post, {"http://123.56.196.102/chuanqi/index.php/Home/Index/get_operate_active_conf",
+	{ok, {_, _, Body}} = httpc:request(post, {"http://123.206.225.144/chuanqi_mg/index.php/Home/Index/get_operate_active_conf",
 		%% {ok, {_, _, Body}} = httpc:request(post, {"http://www/chuanqi_mg/index.php/Home/Index/get_operate_active_conf",
 		[], "application/x-www-form-urlencoded", TestData}, [], []),
 
@@ -132,7 +132,7 @@ get_operate_sub_type_conf_html() ->
 		"service_id=", config:get_server_no()
 	]),
 	%% http请求 获取内容
-	{ok, {_, _, Body}} = httpc:request(post, {"http://123.56.196.102/chuanqi/index.php/Home/Index/get_operate_sub_type_conf",
+	{ok, {_, _, Body}} = httpc:request(post, {"http://123.206.225.144/chuanqi_mg/index.php/Home/Index/get_operate_sub_type_conf",
 		%% {ok, {_, _, Body}} = httpc:request(post, {"http://www/chuanqi_mg/index.php/Home/Index/get_operate_sub_type_conf",
 		[], "application/x-www-form-urlencoded", TestData}, [], []),
 
@@ -145,7 +145,7 @@ reload_manager_config_html() ->
 		"service_id=", config:get_server_no()
 	]),
 
-	{ok, {_, _, Body}} = httpc:request(post, {"http://123.56.196.102/chuanqi/index.php/Home/Index/config",
+	{ok, {_, _, Body}} = httpc:request(post, {"http://123.206.225.144/chuanqi_mg/index.php/Home/Index/config",
 		[], "application/x-www-form-urlencoded", Params}, [], []),
 
 	io:format("manager_config data~p  http: ~p~n", [Params, Body]),

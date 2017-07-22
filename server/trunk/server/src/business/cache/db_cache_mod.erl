@@ -110,8 +110,8 @@ handle_info(Info, State) ->
 	| {shutdown, term()}
 	| term().
 %% ====================================================================
-terminate(_Reason, _State) ->
-	io:format("~p terminate~n", [?MODULE]),
+terminate(Reason, _State) ->
+	io:format("~p terminate~n ~p", [?MODULE, Reason]),
 	db_cache_lib:save_to_db(),
 	ok.
 

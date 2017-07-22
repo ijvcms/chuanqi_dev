@@ -1,0 +1,39 @@
+充值流程
+一、游戏服生成订单通知web服
+    请求：
+    Method: post
+    Url: "http://123.56.196.102/chuanqi/index.php/Home/sdk/xmw/create_pay.html"
+    Headers: ""
+    ContentType: "application/x-www-form-urlencoded"
+    Body: "charge_id=订单id&amount=消耗人民币&open_id=玩家open id&player_id=玩家id&plat=平台id&service_id=服务器id"
+    回包：
+    "true"或者"false"
+
+二、web扣费成功后通知游戏服
+    1.后台跟服务器通讯都是通过post短链接来通讯
+    2.包体内容都是json格式，格式如下
+        请求包:
+        {"back_req":{
+            "cmd": 整数协议号
+            "data": 内容，内容也是json格式
+            }
+        }
+
+        返回包：
+        {"back_rep":{
+            "cmd": 整数协议号
+            "data": 内容，内容也是json格式
+            }
+        }
+
+    3.具体协议内容如下
+        充值成功返回游戏服
+        协议号: 1009
+        {"back_req_charge": {
+            "player_id": 玩家id
+            "id": 定单号
+        }
+
+        {"back_rep_charge", {
+            "result": 结果码, 0表示成功, 非零表示失败
+        }.

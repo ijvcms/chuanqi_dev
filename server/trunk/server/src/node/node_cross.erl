@@ -22,10 +22,15 @@
 %% API functions
 %% ====================================================================
 start() ->
+	?ERR("start base", []),
 	ok = service_base:start(),%% 基础
+	?ERR("start cache", []),
 	ok = service_cache:start(),%% 缓存
+	?ERR("start game", []),
 	ok = service_game:start(),%% 游戏
+	?ERR("start back", []),
 	ok = service_back:start(),%% 后台
+	?ERR("start gateway", []),
 	ok = service_gateway:start(),%% 路由器
 	io:format("dsdsdsfdgg"),
 	ok.
