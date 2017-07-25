@@ -278,7 +278,7 @@ function LoginScene:showLoginView(loginBtnVisible)
         self:showLabTips("self.loginView == nil")
         if  channelId == "D6A6806578B689C4" or channelId == "D74620B09C2CD765" then -- 腾讯
             self:initQQLoginView()
-        elseif channelId == "1888" or (string.sub(channelId, 1, 1) == "9" and string.sub(channelId, 1, 2) ~= "36" ) then --自营IOS
+        elseif channelId == "1888" and string.sub(channelId, 1, 2) ~= "36" then --自营IOS
             self:initIOSLoginView()
             local loginType = self:getLoginType()
             if "" ~= loginType then --有登陆过自动登陆
