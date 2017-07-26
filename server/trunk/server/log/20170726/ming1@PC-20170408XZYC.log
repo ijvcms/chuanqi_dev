@@ -1,0 +1,14 @@
+
+=ERROR REPORT==== 2017-07-26 16:40:32 ===** Generic server db_cache_mod terminating 
+** Last message in was {'EXIT',<0.73.0>,shutdown}
+** When Server state == {state}
+** Reason for termination == 
+** {terminated,[{io,format,
+                    [<0.48.0>,"~p terminate~n ~p",[db_cache_mod,shutdown]],
+                    []},
+                {db_cache_mod,terminate,2,
+                              [{file,"src/business/cache/db_cache_mod.erl"},
+                               {line,114}]},
+                {gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},
+                {proc_lib,init_p_do_apply,3,
+                          [{file,"proc_lib.erl"},{line,239}]}]}
