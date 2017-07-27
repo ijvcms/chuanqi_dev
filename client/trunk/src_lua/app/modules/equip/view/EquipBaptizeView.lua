@@ -135,7 +135,7 @@ function EquipBaptizeView:setViewInfo(data)
 	self.itemLayer:addChild(commonItem)
 	commonItem:setItemClickFunc(handler(self,self.equipClick))
 	commonItem:setPosition(self.itemLayer:getContentSize().width/2, self.itemLayer:getContentSize().height/2)
-	commonItem:setScale(0.94)
+	--commonItem:setScale(0.94)
 	self.equipName:setString(configHelper:getGoodNameByGoodId(data.goods_id))
 
     self.currentItemDataBaptize = data.baptize_attr_list

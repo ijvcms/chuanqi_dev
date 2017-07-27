@@ -91,6 +91,8 @@ function RechargeItem:setViewInfo(data)
     self.rmb:setString(data.rmb.."元")
    
     --self:showEffect("shiningEffect")    
+    --屏蔽充值标记
+    self.conner_mark:setVisible(false)
 
 end
 

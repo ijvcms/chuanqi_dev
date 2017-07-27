@@ -137,7 +137,7 @@ function RideStrengView:init()
     self.closeBtn:setTouchEnabled(true)
     self.closeBtn:addNodeEventListener(cc.NODE_TOUCH_EVENT, function(event)
         if event.name == "began" then
-            self.closeBtn:setScale(1.2)
+            self.closeBtn:setScale(1.1)
             SoundManager:playClickSound()
         elseif event.name == "ended" then
             self.closeBtn:setScale(1.0)
@@ -231,7 +231,7 @@ function RideStrengView:setViewInfo(data)
 	        self.commonItem:setData({goods_id = lastConfig.upgrade_stuff[1][1]})
 	        self.itemBg:addChild(self.commonItem, 10,10)
 	        self.commonItem:setPosition(self.itemBg:getContentSize().width/2, self.itemBg:getContentSize().height/2)
-	        self.commonItem:setScale(0.8)
+	        --self.commonItem:setScale(0.8)
 	    else
 	        self.commonItem:setData({goods_id = lastConfig.upgrade_stuff[1][1]})
 	    end
@@ -255,7 +255,7 @@ function RideStrengView:setViewInfo(data)
         self.commonItem:setData({goods_id = data.upgrade_stuff[1][1]})
         self.itemBg:addChild(self.commonItem, 10,10)
         self.commonItem:setPosition(self.itemBg:getContentSize().width/2, self.itemBg:getContentSize().height/2)
-        self.commonItem:setScale(0.8)
+        --self.commonItem:setScale(0.8)
     else
         self.commonItem:setData({goods_id = data.upgrade_stuff[1][1]})
     end

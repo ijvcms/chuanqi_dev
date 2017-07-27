@@ -171,7 +171,7 @@ WinConfig = {
 	investWin = {winTag = WinName.INVESTWIN,  layer = WinLayer.main,req = "app.modules.invest.InvestWin",url = "resui/investWin.ExportJson",openModel = 0,closeModel=0,isDrag=0,closeVisible = 0,title ="",useBg = false},
 	
 	luckDrawWin = {winTag = WinName.LUCKDRAWWIN,  layer = WinLayer.main,req = "app.modules.luckDraw.LuckDrawWin",url = "resui/goldTurnPlateWin.ExportJson",openModel = 0,closeModel=0,isDrag=0,closeVisible = 0,title ="",useBg = false},
-	treasureWin = {winTag = WinName.TREASUERWIN,  layer = WinLayer.guide,req = "app.modules.treasure.TreasureWin",url = "resui/treasureWin.ExportJson",openModel = 0,closeModel=0,isDrag=0,closeVisible = 0,title ="神秘探宝",useBg = true},
+	treasureWin = {winTag = WinName.TREASUERWIN,  layer = WinLayer.guide,req = "app.modules.treasure.TreasureWin",url = "resui/treasureWin.ExportJson",openModel = 0,closeModel=0,isDrag=0,closeVisible = 0,title ="秘境寻宝",useBg = true},
 	changLineWin = {winTag = WinName.CHANGLINEWIN,  layer = WinLayer.main,req = "app.modules.changLine.ChangLineWin",url = "resui/changeLineWin.ExportJson",openModel = 0,closeModel=0,isDrag=0,closeVisible = 0,title ="",useBg = false},
 	npcTransfer = {winTag = WinName.NPCTRANSFER,  layer = WinLayer.main,req = "app.modules.npcDialog.NpcTransfer",url = "resui/npctransmitWin_1.ExportJson",openModel = 0,closeModel=0,isDrag=0,title ="",useBg = false},
 	npcBuyWin = {winTag = WinName.NPCBUYWIN,  layer = WinLayer.main,req = "app.modules.npcDialog.NpcBuyWin",url = "resui/npcshopWin_1.ExportJson",openModel = 0,closeModel=0,isDrag=0,title ="小商店",useBg = true},

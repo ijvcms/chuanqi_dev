@@ -53,12 +53,12 @@ function CommonItemCell:ctor()
 	--self.frameBgSprite:setAnchorPoint(ccp(0.5, 0.5))
 	--self.frameBgSprite:setPosition(ccp(cellWidth / 2, cellHeight / 2))
 	-- 数量显示			
-	self.countLabel 		= display.newTTFLabel({}):addTo(self,15)
+	self.countLabel 		= display.newTTFLabel({}):addTo(self,17)
 	self.countLabel:setTextColor(TextColor.TEXT_WHITE)
 	self.countLabel:setString("")
 	self.countLabel:setSystemFontSize(18)
 	self.countLabel:setAnchorPoint(ccp(1.0, 0.5))
-	self.countLabel:setPosition(ccp(cellWidth/2-8, -cellHeight / 2 + 12))
+	self.countLabel:setPosition(ccp(cellWidth/2-8, -cellHeight / 2 + 16))
 
 	--名称显示
 	self.nameLabel 			= nil
@@ -408,8 +408,8 @@ function CommonItemCell:initStrengLabel()
 	--强化等级显示
 	self.streng = display.newTTFLabel({}):addTo(self,15)
 	self.streng:setString(0)
-	self.streng:setAnchorPoint(ccp(0, 0.5))
-	self.streng:setPosition(ccp(-cellWidth/2 + 6, cellHeight / 2 - 14))
+	self.streng:setAnchorPoint(ccp(0.5, 0.5))
+	self.streng:setPosition(ccp(cellWidth/2 - 24, cellHeight / 2 - 18))
 end
 
 function CommonItemCell:setStrengVisible(enabled)
@@ -432,15 +432,14 @@ function CommonItemCell:setArtifact(star)
 		self.artifact:removeSelf()
 		self.artifact = nil
 	end
-
 	if not star then return end
 
 	if star == 1 then 			--单神
 		self.artifact = display.newSprite("#com_singleArt.png"):addTo(self, 15)
-		self.artifact:setPosition(-20, -13)
+		self.artifact:setPosition(-20, -12)
 	elseif star == 2 then 		--双神
 		self.artifact = display.newSprite("#com_doubleArt.png"):addTo(self, 15)
-		self.artifact:setPosition(-20, -13)
+		self.artifact:setPosition(-20, -12)
 	end
 end
 
@@ -506,9 +505,9 @@ function CommonItemCell:setLock(bisLock)
 			self.lockSprite = display.newSprite("#com_propTbLock.png")
 			self.lockSprite:setVisible(false)
 			--self.lockSprite:setAnchorPoint(ccp(0.5, 0.5))
-			self.lockSprite:setPosition(-self.lockSprite:getContentSize().width - 2 , -self.lockSprite:getContentSize().height)
+			self.lockSprite:setPosition(-self.lockSprite:getContentSize().width - 8 , -self.lockSprite:getContentSize().height-2)
 			--self.lockSprite:setScale(self.m_scale)
-			self:addChild(self.lockSprite,100,100)
+			self:addChild(self.lockSprite,16)
 		end
 		self.lockSprite:setVisible(true)
 		self.isLock = true 
@@ -526,9 +525,9 @@ function CommonItemCell:setSecure(bisLock)
 			self.secureSprite = display.newSprite("#com_propGoldLock.png")
 			self.secureSprite:setVisible(false)
 			--self.lockSprite:setAnchorPoint(ccp(0.5, 0.5))
-			self.secureSprite:setPosition(-self.secureSprite:getContentSize().width - 2 , -self.secureSprite:getContentSize().height)
+			self.secureSprite:setPosition(-self.secureSprite:getContentSize().width - 8 , -self.secureSprite:getContentSize().height-2)
 			--self.lockSprite:setScale(self.m_scale)
-			self:addChild(self.secureSprite,100,100)
+			self:addChild(self.secureSprite,16)
 		end
 		self.secureSprite:setVisible(true)
 		self.isLock = true 
@@ -555,7 +554,7 @@ function CommonItemCell:setSoul(soulLv)
 	
 	if self.soulSprite == nil then
 		self.soulSprite = display.newSprite("#com_equipSoul_"..soulLv..".png")
-		self.soulSprite:setPosition(self.soulSprite:getContentSize().width/2 - 4, self.soulSprite:getContentSize().height/2 + 8)
+		self.soulSprite:setPosition(self.soulSprite:getContentSize().width/2, self.soulSprite:getContentSize().height/2 + 8)
 		self.itemSprite:addChild(self.soulSprite)
 		self.soulSprite:setLocalZOrder(10)
 	else
@@ -596,7 +595,7 @@ function CommonItemCell:showArrow()
 		-- 提升箭头
 	if self.pa == nil then
 		self.pa = display.newSprite("#com_equipUpArr.png"):addTo(self,15)
-	    self.pa:setPosition(ccp(cellWidth/2-16, -cellHeight / 2 + 20))
+	    self.pa:setPosition(ccp(cellWidth/2-16, -cellHeight / 2 + 12))
 	end
 	self.pa:setVisible(true)
 end

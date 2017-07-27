@@ -22,17 +22,19 @@ function SelectItem:ctor(loader, layoutFile)
 end
 
 function SelectItem:setViewInfo(data)
-
+  self.attribute:setVisible(false)
 	local equipItem = configHelper:getEquipValidAttrByEquipId(data.goods_id)
 	if data.type == 2 then
         self:setDes(configHelper:getGoodDescByGoodId(data.goods_id))
-    elseif data.type == 1 then
-        if equipItem[1][1] == "hp" then
-        	self:setDes(self:getName(equipItem[1][1])..":"..equipItem[1][2])
+  elseif data.type == 1 then
+      if equipItem[1][1] == "hp" then
+      	self:setDes(self:getName(equipItem[1][1])..equipItem[1][2])
     	else
-        	self:setDes(self:getName(equipItem[1][1])..":"..equipItem[1][2].."-"..equipItem[2][2]) 
-    	end                  
-    end
+        	self:setDes(self:getName(equipItem[1][1])..equipItem[1][2].."-"..equipItem[2][2]) 
+    	end
+  else
+      self:setDes(configHelper:getGoodDescByGoodId(data.goods_id))            
+  end
 
 	self.goodsname:setString(configHelper:getGoodNameByGoodId(data.goods_id))
 	self.lv:setString("Lv."..configHelper:getGoodLVByGoodId(data.goods_id))
@@ -46,7 +48,7 @@ function SelectItem:setViewInfo(data)
 	self.commonItem:setCount(data.num)
 	self.commonItem:setTouchEnabled(false)
 	self.commonItem:setPosition(self.Image_24:getContentSize().width/2, self.Image_24:getContentSize().height/2)
-	self.commonItem:setScale(0.81)
+	--self.commonItem:setScale(0.81)
 
 	self.Image_9:setVisible(data.location == 1)
 end
