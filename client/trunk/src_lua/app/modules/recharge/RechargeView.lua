@@ -91,26 +91,16 @@ function RechargeView:init()
 	display.addSpriteFrames("resui/chargeWin0.plist", "resui/chargeWin0.png")
 	local config = RechargeManager:getInstance():getList()
  	local channelId = ChannelAPI:getChannelId()
-	if channelId == "1888" or string.sub(channelId, 1, 1) == "3" then
-		if config then
-			for i=#config,1,-1 do
-				if config[i].jade > 6480 then
-					table.remove(config,i)
-				end
+
+ 	if config then
+		for i=#config,1,-1 do
+			if config[i].rmb == 328 then
+				table.remove(config,i)
+				break
 			end
 		end
-	else
-
-		if config then
-			for i=#config,1,-1 do
-				if config[i].jade == 1980 then
-					table.remove(config,i)
-					break
-				end
-			end
-		end
-
 	end
+
 	if #config > 1 then
 		table.sort(config,function(a,b) return a.number < b.number end )
 	end
@@ -137,7 +127,7 @@ function RechargeView:init()
 	layer:setContentSize(cc.size(w*4, h*math.ceil(#config/4)))
 	layer:setPosition(0, 0)
 	--self.scrollView:scrollAuto()
-	self.progressbarSP:setPercent(0)
+	--self.progressbarSP:setPercent(0)
 	self:addEvent()
 
 end

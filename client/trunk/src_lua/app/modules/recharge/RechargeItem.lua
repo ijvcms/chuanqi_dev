@@ -92,7 +92,7 @@ function RechargeItem:setViewInfo(data)
    
     --self:showEffect("shiningEffect")    
     --屏蔽充值标记
-    self.conner_mark:setVisible(false)
+    --self.conner_mark:setVisible(false)
 
 end
 

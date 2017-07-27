@@ -61,6 +61,25 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
+			<key>sbk_coinReward1.png</key>
+			<dict>
+				<key>width</key>
+				<integer>864</integer>
+				<key>height</key>
+				<integer>176</integer>
+				<key>originalWidth</key>
+				<integer>864</integer>
+				<key>originalHeight</key>
+				<integer>176</integer>
+				<key>x</key>
+				<integer>0</integer>
+				<key>y</key>
+				<integer>405</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
 			<key>sbk_equip.png</key>
 			<dict>
 				<key>width</key>

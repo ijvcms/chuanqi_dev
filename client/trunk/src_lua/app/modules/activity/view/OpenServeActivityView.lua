@@ -19,8 +19,8 @@ function OpenServeActivityView:init()
     self.tabList[1] = self:seekNodeByName("topBtn1")
     self.tabList[2] = self:seekNodeByName("topBtn2") 
 
-    local btnTips = BaseTipsBtn.new(BtnTipsType.BTN_ACTIVE_SERVICE_UI,self.tabList[1],self.tabList[1]:getContentSize().width - 20,self.tabList[1]:getContentSize().height - 20)
-    local btnTips = BaseTipsBtn.new(BtnTipsType.BTN_ACTIVE_SERVICE_UI_RANK,self.tabList[2],self.tabList[2]:getContentSize().width - 20,self.tabList[2]:getContentSize().height - 20)   
+    local btnTips = BaseTipsBtn.new(BtnTipsType.BTN_ACTIVE_SERVICE_UI,self.tabList[1],self.tabList[1]:getContentSize().width - 8,self.tabList[1]:getContentSize().height - 8)
+    local btnTips = BaseTipsBtn.new(BtnTipsType.BTN_ACTIVE_SERVICE_UI_RANK,self.tabList[2],self.tabList[2]:getContentSize().width - 8,self.tabList[2]:getContentSize().height - 8)   
 
     self.advTextImg = self:seekNodeByName("advTextImg")
   	self.timeLabel = self:seekNodeByName("timeLabel")
