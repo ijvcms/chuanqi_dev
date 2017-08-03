@@ -204,14 +204,14 @@ function WelfareSignView:setViewInfo(data)
 			if i == self.today then
  				if self.todaySprite == nil then
  					self.todaySprite = display.newSprite("#welfare_today.png"):addTo( self.monthLayer)
- 					self.todaySprite:setScale(0.8)
+ 					--self.todaySprite:setScale(0.8)
  				end
 
  				if self.signList[i] then
  					self.btn_Sign:setButtonEnabled(false)
  					self.btn_Sign:setButtonLabelString("已签")
  				end
- 				self.todaySprite:setPosition(self.dateList[i]:getPositionX(), self.dateList[i]:getPositionY() + 15)
+ 				self.todaySprite:setPosition(self.dateList[i]:getPositionX(), self.dateList[i]:getPositionY())
 			else
 				break
 			end

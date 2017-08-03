@@ -9,6 +9,7 @@ function FightResurgeView:ctor(winTag,data,winconfig)
   self.data = data
 	self.width = 553
 	self.height = 345
+  self.needYuanbaoNum = 50
 
 	self.bg =  cc.LayerColor:create(cc.c4b(0,0,0,180))
     --self.bg:setOpacity(255*0.8)
@@ -78,7 +79,7 @@ function FightResurgeView:ctor(winTag,data,winconfig)
     self.syLbl:setPosition((self.width-40)/2+125-15 - 30,90)
     self.isRedName = (RoleManager:getInstance().roleInfo.pkValue >= 60)
     local fuhuodanTip = "复活丹"
-    local yuanbaoTip = "50元宝"
+    local yuanbaoTip = self.needYuanbaoNum.."元宝"
     --[[
     if self.isRedName then
       fuhuodanTip = fuhuodanTip.."x3"
@@ -215,7 +216,7 @@ function FightResurgeView:onResurgeClick(ctype,isClick)
         if self.data.fh_vip_num > 0 then
             enterFun()
             return
-        elseif goodsNum > 1*numScale or RoleManager:getInstance().wealth.jade > 50*numScale then
+        elseif goodsNum > 1*numScale or RoleManager:getInstance().wealth.jade > self.needYuanbaoNum*numScale then
             enterFun()
             return
         else

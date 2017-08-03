@@ -76,7 +76,7 @@ function JingcaiCommonWin:setViewInfo(data)
 	if data == nil then
 		return
 	end
-	dump(data)
+	--dump(data)
 	self.data = data
 	
 	self.titleLabel:setString(data.title)

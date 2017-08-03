@@ -98,6 +98,7 @@ function LoginEnterGame:ctor()
         end
     return true
     end)
+    backBtn:setVisible(false)
     self.showNotice = false
 end
 

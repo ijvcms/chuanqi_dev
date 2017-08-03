@@ -44,7 +44,6 @@ function JingcaiCountItem:init()
 end
 
 function JingcaiCountItem:setData(data)
-
 	if data == nil then
 		 
         return 

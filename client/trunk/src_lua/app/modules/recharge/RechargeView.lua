@@ -240,26 +240,31 @@ end
 
 function RechargeView:itemClick(item)
 	if not item then return end
-	local tipTxt  = "确定要充值"..item:getData().jade.."元宝？"
-	--月卡特殊处理
-	if item:getData().key == 1 then
-		tipTxt  = "确定要购买月卡？"
-	end
-          
-    GlobalMessage:alert({
-	    enterTxt = "确定",
-	    backTxt= "取消",
-	    tipTxt = tipTxt,
-	    enterFun = function() 
-	    	--开始充值统计
---	        local orderId, name, price = GlobalAnalytics:beginPay(item)--订单号
-		dump(item:getData())
-            RechargeManager:getInstance():setChargeItemData(item:getData())
-	        GameNet:sendMsgToSocket(30001,{key = item:getData().key, order_id = ""}) 
 
-	    end,
-	    tipShowMid = true,
-    })
+    local enterFun = function()
+    	dump(item:getData())
+		RechargeManager:getInstance():setChargeItemData(item:getData())
+	    GameNet:sendMsgToSocket(30001,{key = item:getData().key, order_id = ""}) 
+	end
+
+
+	if device.platform ~= "ios" then
+		local tipTxt  = "确定要充值"..item:getData().jade.."元宝？"
+		--月卡特殊处理
+		if item:getData().key == 1 then
+			tipTxt  = "确定要购买月卡？"
+		end
+	          
+	    GlobalMessage:alert({
+		    enterTxt = "确定",
+		    backTxt= "取消",
+		    tipTxt = tipTxt,
+		    enterFun = enterFun,
+		    tipShowMid = true,
+	    })
+	else
+		enterFun()
+	end
 	
 end
 

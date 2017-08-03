@@ -136,13 +136,13 @@ function FunctionOpenManager:showFunctionOpenTips(param)
 end
 
 function FunctionOpenManager:initFunctionOpenList(array)
-	dump(array)
+	--dump(array)
 	self.openDic = {}--切换账号时 清理资源
 	self:setFunctionEnabled(array, true)
 end
 
 function FunctionOpenManager:UpdateFunctionOpenByList(array, enabled)
-	dump(array)
+	--dump(array)
 	if enabled then
 		self:onOpenFunctions(array)
 	end

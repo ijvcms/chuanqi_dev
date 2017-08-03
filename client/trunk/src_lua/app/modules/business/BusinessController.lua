@@ -58,7 +58,6 @@ end
 
 function BusinessController:onHandle32045(data)
 	print("BusinessController:onHandle32045")
-	dump(data)
 	if  data.result == 0 then
 		GlobalEventSystem:dispatchEvent(BusinessEvent.RCV_BUSINESS_REWARD,data)
 	else

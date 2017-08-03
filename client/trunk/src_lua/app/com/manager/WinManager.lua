@@ -20,17 +20,37 @@ WinName = {
 	NPCBUYWIN = "npcBuyWin", --Npc购买界面
 	NPCTRANSFER = "npcTransfer", --Npc传送界面 
 	NPCDIALOG = "npcDialog", --Npc对话界面
-	LUCKTURNPLATEWIN = "luckTurnPlateWin", --幸运大转盘
-	LUCKTURNPLATE2WIN = "luckTurnPlate2Win", --元宝大转盘
+
+	LUCKTURNPLATEWIN = "luckTurnPlateWin", --幸运大转盘                          活动幸运轮盘  
+	LUCKTURNPLATE2WIN = "luckTurnPlate2Win", --元宝大转盘  已废掉
 	INVESTWIN = "investWin", --投资
 	LUCKDRAWWIN = "luckDrawWin", --幸运抽奖
 	SHENGHUANGMJ = "ShengHuangMJWin", --秘境寻宝
+	TREASUERWIN = "treasureWin", --神秘探宝          土城NPC
+	
+	INTERSERVISE = "interServise",--跨服Boss 跨服活动
+	MERGEACTIVITY = "mergeActivity", --合服活动
+	TIMEACTIVITY = "timeActivityWin", --限时活动
+	SEVENLOGINWIN = "sevenLoginWin", --七天登录活动
+	ACTIVITYWIN = "activityWin", -- 活动窗口
+	RECHARGEWIN = "rechargeWin", -- 充值窗口
+	DLREWARDWIN = "dlRewardWin", --分包下载奖励
+	WELFAREWIN = "welfareWin", -- 福利中心窗口
+	SIGNWIN = "signWin", -- 月签窗口
+	ACTIVITYSERVICERANKWIN = "activityServiceWin", -- 开服活动
+	BUSINESSWIN = "businessWin",--运营活动 精彩活动   后台控制的活动
+	ANSWERINGWIN = "answeringWin",--趣味答题说明窗体
+	ANSWERINGMAINWIN = "answeringMainWin",--趣味答题主题
+	HOLIDAYWIN = "holidayWin",--节日活动   //配置表配置 holidays_active.xml
+	ONETIMESWIN = "oneTimesWin",--一生一次购买活动
+	PRIZERANK = "prizeRank", --奖励排行
+
+
+
 	UNIONWIN = "unionWin", --结盟
 	GVGWIN = "gvgWin",--GVG
 	GVGFUHUOWIN = "gvgFuHuoWin",--GVG复活
-	TREASUERWIN = "treasureWin", --神秘探宝
 	CHANGLINEWIN = "changLineWin",--切线
-	INTERSERVISE = "interServise",--跨服Boss 跨服活动
 	COPYPRIZETIPS = "copyPrizeTips",--副本奖励提示
 	COPYCOUNTDOWNVIEW = "copyCountDownView",--副本倒计时提示
 	WEARTEMPORARYWINGVIEW = "wearTemporaryWingView",--临时翅膀提示页面
@@ -38,10 +58,6 @@ WinName = {
 	UPGRADEWINGTIPSVIEW = "upgradeWingTipsView",--翅膀升级提示页面
 	FUNCTIONOPENPRIZEVIEW = "functionOpenPrizeView",--功能开放奖励提示页面
 	LOGIN = "login",
-	MERGEACTIVITY = "mergeActivity", --合服活动
-
-	TIMEACTIVITY = "timeActivityWin", --限时活动
-	SEVENLOGINWIN = "sevenLoginWin", --七天登录活动
 	SERVERDARKWIN = "serverDarkWin", --跨服暗殿
 
 	HLSDWIN = "hlsdWin", --火龙神殿
@@ -84,17 +100,12 @@ WinName = {
 	EQUIPCOMPOSEWIN = "equipComposeWin", --武器提纯
 	GUILDWIN = "guildWin", -- 公会窗口
 	VIPWIN = "vipWin", -- vip窗口
-	ACTIVITYWIN = "activityWin", -- 活动窗口
-	RECHARGEWIN = "rechargeWin", -- 充值窗口
-	DLREWARDWIN = "dlRewardWin", --分包下载奖励
-	WELFAREWIN = "welfareWin", -- 福利中心窗口
-	SIGNWIN = "signWin", -- 月签窗口
 	EXCHANGEWIN = "exchangeView", -- 交易所窗口
 	DARKHOUSEWIN = "darkHouseView", -- 未知暗殿窗口
 	DRAGONWIN = "dragonView", -- 屠龙大会窗口
 	WINNERWIN = "winnerView", -- 胜者为王窗口
 	RANKWIN = "rankWin", -- 排行榜
-	ACTIVITYSERVICERANKWIN = "activityServiceWin", -- 开服活动
+	
 	MAILWIN = "mailWin", -- 邮件窗口
 	EQUIPEXTENDSWIN = "equipExtendsWin", --武器继承
 	EQUIPSOULWIN = "equipSoulWin", --武器铸魂
@@ -104,21 +115,13 @@ WinName = {
 	GUILDWARWIN = "guildWarWin",
 	GUILDWARRESULTWIN = "guildWarResultWin",
 	MONSTERATTACKWIN = "monsterAttackWin",--怪物攻城
-	BUSINESSWIN = "businessWin",--运营活动
 	EQUIPSHOWWIN = "equipShowWin",--装备展示
-	ANSWERINGWIN = "answeringWin",--趣味答题说明窗体
-	ANSWERINGMAINWIN = "answeringMainWin",--趣味答题主题
 	BOSSCOPYWIN = "bossCopyWin",--个人boss副本
-
-	HOLIDAYWIN = "holidayWin",--节日活动
-
-	ONETIMESWIN = "oneTimesWin",--一生一次购买活动
 
 	DREAMLANDWIN = "dreamlandWin", -- 跨服幻境之城
 
 	DREAMLANDLOCALWIN = "dreamlandLocalWin",
 	
-	PRIZERANK = "prizeRank", --奖励排行
 
 	VARIATIONPALACE = "variationpalace", --变异地宫
 	

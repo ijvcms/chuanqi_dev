@@ -33,7 +33,7 @@ function ShengHuangMJWin:ctor(winTag,data,winconfig)
     self.closeBtn = self:seekNodeByName("btnClose")
 
     self.prizeConfig = {}
-    self.allPrizeConfig = {}
+    -- self.allPrizeConfig = {}
 
     self.closeBtn:setTouchEnabled(true)
     self.closeBtn:addNodeEventListener(cc.NODE_TOUCH_EVENT, function(event)
@@ -427,7 +427,7 @@ function ShengHuangMJWin:shengHuangInit(data)
     self.initData = data.data or {}
     self.groupId = self.initData.group_id
     self.prizeConfig = configHelper:getLuckydraw_displayConfigByGroup(self.groupId)
-    self.allPrizeConfig = configHelper:getLottery_boxConfigByGroup(1) 
+    -- self.allPrizeConfig = configHelper:getLottery_boxConfigByGroup(1) 
     
     self:updateSelfBuyLog(self.initData.my_log_lists)
     self:updateAllServerLog(self.initData.all_log_lists)

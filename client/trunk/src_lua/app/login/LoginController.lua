@@ -851,7 +851,7 @@ end
 function LoginController:onHandle34001(data)
 	print("LoginController:onHandle34001")
 	local index = self:findFunctionId()
-	dump(index)
+	--dump(index)
 	if index ~= nil then
 		self.angPaoIdList[index] = data.red_id
 		FunctionOpenManager:UpdateFunctionOpenByList({index}, true)
@@ -892,6 +892,7 @@ function LoginController:onHandle10002(data)
 end
 
 function LoginController:onHandle22002(data)
+	--dump(data)
 	if data.result ~= 0 then
 		GlobalAlert:showTips(ErrorCodeNormalInfo[data.result])
 	end

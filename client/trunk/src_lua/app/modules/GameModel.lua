@@ -19,7 +19,7 @@ function GameModel:init()
 
 	self.os_type = 0 --操作系统类型 1表示安卓，2表示ios
 
-	self.platform = 10 --平台名称 渠道编号
+	self.platform = 1000 --平台名称 渠道编号
 	self.open_id = ""    --平台id
 	self.curServerId = 0 --服务器ID 1
 	self.loginServerList = {} --登陆过的服务器列表

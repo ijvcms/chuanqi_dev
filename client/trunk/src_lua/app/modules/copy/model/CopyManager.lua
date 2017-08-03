@@ -45,7 +45,6 @@ function CopyManager:setCopyListInfo(list)
 		--self.copyList[config[i].scene_id] = copyVo
 		table.insert(self.copyList, copyVo)
 	end
-
 	GlobalEventSystem:dispatchEvent(CopyEvent.COPY_ALLINFO, {list = self.copyList})
 
 end

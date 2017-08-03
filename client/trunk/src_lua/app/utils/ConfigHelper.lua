@@ -1273,7 +1273,16 @@ function ConfigHelper:getWorldBossList()
 end
 
 function ConfigHelper:getVipBossList()
-	return self.vip_bossConfig.datas
+	local arr = {}
+	local obj
+	for i=1,#self.vip_bossConfig.datas do
+		obj = self.vip_bossConfig.datas[i]
+		if obj.is_open and obj.is_open == 0 then
+		else
+			table.insert(arr,obj)
+		end 
+	end
+	return arr
 end
 
 function ConfigHelper:getCityBossList()
@@ -1468,14 +1477,11 @@ end
 function ConfigHelper:getCopyList()
 
 	local list = {}
- 
 	for k,v in pairs(self.instanceConfig.datas) do
-	 
-		 if tonumber(v.instanceType) == 1 then
+		if tonumber(v.instanceType) == 1 then
 		 	list[k] = v
-		 end
+		end
 	end
-
 	return list
 
 end

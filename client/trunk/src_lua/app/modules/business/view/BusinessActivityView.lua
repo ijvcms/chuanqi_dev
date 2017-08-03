@@ -17,7 +17,7 @@ local  BusinessActivityView = BusinessActivityView or class("BusinessActivityVie
 
 function BusinessActivityView:ctor(winTag, data, winconfig)
 	BusinessActivityView.super.ctor(self, winTag, data, winconfig)
-	
+	--jingcaihuodongWin
 	local root = self:getRoot()
 	root:setPosition((display.width-960)/2,(display.height-640)/2)
  

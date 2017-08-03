@@ -46,6 +46,8 @@ AUTO = 0 --1 自动游戏，0 不使用
 
 DEBUG_SERVER_LIST = "[{\"name\" : \"测试服\",\"state\" : 1,\"service_id\" : 102,\"service_port\" :10011,\"ip\" : \"118.89.151.81\"},"..
 					"{\"name\" : \"内网服\",\"state\" : 1,\"service_id\" : 103,\"service_port\" : 10011, \"ip\" : \"192.168.0.222\"},"..
+					"{\"name\" : \"2001\",\"state\" : 1,\"service_id\" : 2001,\"service_port\" : 12001, \"ip\" : \"192.168.0.217\"},"..
+					"{\"name\" : \"2001线上\",\"state\" : 1,\"service_id\" : 2001,\"service_port\" : 12001, \"ip\" : \"123.206.203.28\"},"..
 					"{\"name\" : \"1002\",\"state\" : 1,\"service_id\" : 1002,\"service_port\" : 11002, \"ip\" : \"192.168.0.217\"},"..
 					"{\"name\" : \"1001\",\"state\" : 1,\"service_id\" : 1001,\"service_port\" : 11001, \"ip\" : \"123.206.203.28\"},"..
 					"{\"name\" : \"本地服1\",\"state\" : 1,\"service_id\" : 102,\"service_port\" : 10011, \"ip\" : \"192.168.0.124\"},"..

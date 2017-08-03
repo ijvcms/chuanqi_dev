@@ -74,7 +74,7 @@ end
 
 function CopyController:onHandle11034(data)
 	print("CopyController:onHandle11034")
-	dump(data)
+	--dump(data)
 	if nil ~= data then
 		CopyManager:getInstance():setCopyListInfo(data.fb_list)
 		--  GlobalEventSystem:dispatchEvent(CopyEvent.COPY_UPDATECOPYTIME, data)
