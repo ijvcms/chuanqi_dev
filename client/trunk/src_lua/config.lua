@@ -1,6 +1,6 @@
 
 -- 0 - disable debug info, 1 - less debug info, 2 - verbose debug info
-DEBUG = 1
+DEBUG = 0
 DEVELOP = true
 
 -- display FPS stats on screen
@@ -39,7 +39,7 @@ UPDATE_TEST = 210
 
 GAME_FRAME_RATE = 45
 
-DEBUG_LOGIN = true --true使用DEBUG登录 false 不使用
+DEBUG_LOGIN =false--true使用DEBUG登录 false 不使用
 
 AUTO = 0 --1 自动游戏，0 不使用
 
